@@ -8,20 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		BC35CFD2228F211B0043922D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC35CFD1228F211B0043922D /* AppDelegate.swift */; };
-		BC35CFD4228F211B0043922D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC35CFD3228F211B0043922D /* ViewController.swift */; };
-		BC35CFD7228F211B0043922D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC35CFD5228F211B0043922D /* Main.storyboard */; };
-		BC35CFD9228F211D0043922D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC35CFD8228F211D0043922D /* Assets.xcassets */; };
-		BC35CFDC228F211D0043922D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC35CFDA228F211D0043922D /* LaunchScreen.storyboard */; };
+		BC35CFE5228F214C0043922D /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC35CFE3228F214C0043922D /* Splash.storyboard */; };
+		BC35CFE6228F214C0043922D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC35CFE4228F214C0043922D /* Main.storyboard */; };
+		BC35CFE8228F21630043922D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC35CFE7228F21630043922D /* Assets.xcassets */; };
+		BC35CFEB228F21810043922D /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC35CFE9228F21810043922D /* Animal.swift */; };
+		BC35CFEC228F21810043922D /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC35CFEA228F21810043922D /* Contact.swift */; };
+		BC35CFF0228F21980043922D /* TableViewCell_Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC35CFEE228F21970043922D /* TableViewCell_Animal.swift */; };
+		BC35CFF1228F21980043922D /* TableViewCell_Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC35CFEF228F21980043922D /* TableViewCell_Contact.swift */; };
+		BC35CFF4228F219E0043922D /* TextField_Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC35CFF2228F219E0043922D /* TextField_Date.swift */; };
+		BC35CFF5228F219E0043922D /* TextField_Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC35CFF3228F219E0043922D /* TextField_Time.swift */; };
+		BC35CFFA228F21A60043922D /* DetailViewController_Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC35CFF6228F21A50043922D /* DetailViewController_Contact.swift */; };
+		BC35CFFB228F21A60043922D /* TableViewController_Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC35CFF7228F21A50043922D /* TableViewController_Animal.swift */; };
+		BC35CFFC228F21A60043922D /* TableViewController_Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC35CFF8228F21A50043922D /* TableViewController_Contact.swift */; };
+		BC35CFFD228F21A60043922D /* DetailViewController_Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC35CFF9228F21A60043922D /* DetailViewController_Animal.swift */; };
+		BC35CFFF228F21B10043922D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC35CFFE228F21B10043922D /* Default-568h@2x.png */; };
+		BC35D001228F21B90043922D /* IconInfo.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BC35D000228F21B80043922D /* IconInfo.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BC35CFCE228F211B0043922D /* BOBP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BOBP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC35CFD1228F211B0043922D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BC35CFD3228F211B0043922D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BC35CFD6228F211B0043922D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BC35CFD8228F211D0043922D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BC35CFDB228F211D0043922D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC35CFDD228F211D0043922D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC35CFE3228F214C0043922D /* Splash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		BC35CFE4228F214C0043922D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BC35CFE7228F21630043922D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC35CFE9228F21810043922D /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		BC35CFEA228F21810043922D /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		BC35CFEE228F21970043922D /* TableViewCell_Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell_Animal.swift; sourceTree = "<group>"; };
+		BC35CFEF228F21980043922D /* TableViewCell_Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell_Contact.swift; sourceTree = "<group>"; };
+		BC35CFF2228F219E0043922D /* TextField_Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField_Date.swift; sourceTree = "<group>"; };
+		BC35CFF3228F219E0043922D /* TextField_Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField_Time.swift; sourceTree = "<group>"; };
+		BC35CFF6228F21A50043922D /* DetailViewController_Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController_Contact.swift; sourceTree = "<group>"; };
+		BC35CFF7228F21A50043922D /* TableViewController_Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController_Animal.swift; sourceTree = "<group>"; };
+		BC35CFF8228F21A50043922D /* TableViewController_Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController_Contact.swift; sourceTree = "<group>"; };
+		BC35CFF9228F21A60043922D /* DetailViewController_Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController_Animal.swift; sourceTree = "<group>"; };
+		BC35CFFE228F21B10043922D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		BC35D000228F21B80043922D /* IconInfo.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = IconInfo.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +76,57 @@
 		BC35CFD0228F211B0043922D /* BOBP */ = {
 			isa = PBXGroup;
 			children = (
+				BC35CFFE228F21B10043922D /* Default-568h@2x.png */,
+				BC35D000228F21B80043922D /* IconInfo.rtf */,
 				BC35CFD1228F211B0043922D /* AppDelegate.swift */,
-				BC35CFD3228F211B0043922D /* ViewController.swift */,
-				BC35CFD5228F211B0043922D /* Main.storyboard */,
-				BC35CFD8228F211D0043922D /* Assets.xcassets */,
-				BC35CFDA228F211D0043922D /* LaunchScreen.storyboard */,
+				BC35CFE7228F21630043922D /* Assets.xcassets */,
+				BC35CFED228F21860043922D /* Classes - Entities */,
+				BC35D004228F21FB0043922D /* Classes - Text Fields */,
+				BC35D003228F21DA0043922D /* Classes - Table View Cells */,
+				BC35D002228F21BF0043922D /* Classes - Table View Controllers */,
+				BC35CFE4228F214C0043922D /* Main.storyboard */,
+				BC35CFE3228F214C0043922D /* Splash.storyboard */,
 				BC35CFDD228F211D0043922D /* Info.plist */,
 			);
 			path = BOBP;
+			sourceTree = "<group>";
+		};
+		BC35CFED228F21860043922D /* Classes - Entities */ = {
+			isa = PBXGroup;
+			children = (
+				BC35CFE9228F21810043922D /* Animal.swift */,
+				BC35CFEA228F21810043922D /* Contact.swift */,
+			);
+			path = "Classes - Entities";
+			sourceTree = "<group>";
+		};
+		BC35D002228F21BF0043922D /* Classes - Table View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BC35CFF7228F21A50043922D /* TableViewController_Animal.swift */,
+				BC35CFF8228F21A50043922D /* TableViewController_Contact.swift */,
+				BC35CFF9228F21A60043922D /* DetailViewController_Animal.swift */,
+				BC35CFF6228F21A50043922D /* DetailViewController_Contact.swift */,
+			);
+			path = "Classes - Table View Controllers";
+			sourceTree = "<group>";
+		};
+		BC35D003228F21DA0043922D /* Classes - Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BC35CFEE228F21970043922D /* TableViewCell_Animal.swift */,
+				BC35CFEF228F21980043922D /* TableViewCell_Contact.swift */,
+			);
+			path = "Classes - Table View Cells";
+			sourceTree = "<group>";
+		};
+		BC35D004228F21FB0043922D /* Classes - Text Fields */ = {
+			isa = PBXGroup;
+			children = (
+				BC35CFF2228F219E0043922D /* TextField_Date.swift */,
+				BC35CFF3228F219E0043922D /* TextField_Time.swift */,
+			);
+			path = "Classes - Text Fields";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +187,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC35CFDC228F211D0043922D /* LaunchScreen.storyboard in Resources */,
-				BC35CFD9228F211D0043922D /* Assets.xcassets in Resources */,
-				BC35CFD7228F211B0043922D /* Main.storyboard in Resources */,
+				BC35CFE6228F214C0043922D /* Main.storyboard in Resources */,
+				BC35CFFF228F21B10043922D /* Default-568h@2x.png in Resources */,
+				BC35CFE8228F21630043922D /* Assets.xcassets in Resources */,
+				BC35CFE5228F214C0043922D /* Splash.storyboard in Resources */,
+				BC35D001228F21B90043922D /* IconInfo.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,31 +202,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC35CFD4228F211B0043922D /* ViewController.swift in Sources */,
+				BC35CFF1228F21980043922D /* TableViewCell_Contact.swift in Sources */,
+				BC35CFFD228F21A60043922D /* DetailViewController_Animal.swift in Sources */,
+				BC35CFEC228F21810043922D /* Contact.swift in Sources */,
+				BC35CFFC228F21A60043922D /* TableViewController_Contact.swift in Sources */,
+				BC35CFFA228F21A60043922D /* DetailViewController_Contact.swift in Sources */,
+				BC35CFF5228F219E0043922D /* TextField_Time.swift in Sources */,
+				BC35CFF0228F21980043922D /* TableViewCell_Animal.swift in Sources */,
+				BC35CFFB228F21A60043922D /* TableViewController_Animal.swift in Sources */,
 				BC35CFD2228F211B0043922D /* AppDelegate.swift in Sources */,
+				BC35CFEB228F21810043922D /* Animal.swift in Sources */,
+				BC35CFF4228F219E0043922D /* TextField_Date.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		BC35CFD5228F211B0043922D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BC35CFD6228F211B0043922D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		BC35CFDA228F211D0043922D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BC35CFDB228F211D0043922D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BC35CFDE228F211D0043922D /* Debug */ = {
