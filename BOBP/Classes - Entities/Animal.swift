@@ -13,8 +13,6 @@ protocol DocumentSerializable {
     init?(dictionary:[String:Any])
 }
 
-// Github Test comment
-
 struct Animal {
     
     // Required Fields
