@@ -8,7 +8,7 @@
 //
 
 import UIKit
-//import Firebase
+import Firebase
 
 class TableViewController_Animal: UITableViewController {
     
@@ -29,17 +29,16 @@ class TableViewController_Animal: UITableViewController {
     var animals = [Animal]()
     
     // Load Firestore Database Reference
-    // var database:Firestore!
+     var database:Firestore!
     
     // MARK: - Functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        /*
         database = Firestore.firestore()
         loadData()
         checkForUpdates()
-        */
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -49,7 +48,6 @@ class TableViewController_Animal: UITableViewController {
         }
     }
     
-    /*
     func loadData(){
         database.collection("Animal").getDocuments () {
             QuerySnapshot, error in
@@ -79,7 +77,6 @@ class TableViewController_Animal: UITableViewController {
                 }
                 
                 if update.type == .modified {
-                    print (Animal(dictionary: update.document.data())!)
                 }
                 
                 if update.type == .removed {
@@ -88,7 +85,6 @@ class TableViewController_Animal: UITableViewController {
             }
         }
     }
-    */
     
     // MARK: - Table View
     
@@ -129,7 +125,6 @@ class TableViewController_Animal: UITableViewController {
         alertDialog.addTextField{(textfield:UITextField) in textfield.placeholder = self.stringNewPlaceholder}
         alertDialog.addAction(UIAlertAction(title: stringButtonCreate, style: .default, handler: { (action:UIAlertAction) in
             
-            /*
             // Add to FireStore
                 
             if let name = alertDialog.textFields?.first?.text {
@@ -147,7 +142,6 @@ class TableViewController_Animal: UITableViewController {
                 }
                 
             }
- */
             
             //self.performSegue(withIdentifier: self.segueToDetail, sender: self.animal)
             

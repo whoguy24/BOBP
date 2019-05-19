@@ -7,7 +7,7 @@
 //
 
 import Foundation
-//import Firebase
+import Firebase
 
 protocol DocumentSerializable {
     init?(dictionary:[String:Any])
