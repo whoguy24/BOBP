@@ -31,13 +31,13 @@
         <!--Table_Contacts-->
         <scene sceneID="P8d-N8-BoV">
             <objects>
-                <tableViewController storyboardIdentifier="Table_Contact" id="vcS-8J-otl" userLabel="Table_Contacts" customClass="TableViewController_Contact" customModule="Auditions" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Table_Contact" id="vcS-8J-otl" userLabel="Table_Contacts" customClass="TableViewController_Contact" customModule="BOBP" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="54" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cre-UQ-0tF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="contactCell" id="rW1-fH-Ygk" customClass="TableViewCell_Contact" customModule="Auditions" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="contactCell" id="rW1-fH-Ygk" customClass="TableViewCell_Contact" customModule="BOBP" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="54"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rW1-fH-Ygk" id="rW0-Yx-GLk">
@@ -90,13 +90,13 @@
         <!--Table_Animals-->
         <scene sceneID="18s-KF-2DJ">
             <objects>
-                <tableViewController storyboardIdentifier="Table_Animal" id="zbn-nY-cSe" userLabel="Table_Animals" customClass="TableViewController_Animal" customModule="Auditions" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Table_Animal" id="zbn-nY-cSe" userLabel="Table_Animals" customClass="TableViewController_Animal" customModule="BOBP" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="54" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Evv-P4-4zz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="animalCell" id="xwS-WV-ikO" customClass="TableViewCell_Animal" customModule="Auditions" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="animalCell" id="xwS-WV-ikO" customClass="TableViewCell_Animal" customModule="BOBP" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="54"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xwS-WV-ikO" id="v5Q-dv-Kov">
@@ -131,11 +131,14 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="RvE-ev-6s5">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ODg-9J-fGl">
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="ODg-9J-fGl">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="addAnimal:" destination="zbn-nY-cSe" id="7rw-Eg-9U4"/>
                             </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="cRP-X6-ofh">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -201,7 +204,7 @@
         <!--Contact-->
         <scene sceneID="ENH-el-v54">
             <objects>
-                <tableViewController storyboardIdentifier="Detail_Contact" id="UaC-vO-yGh" customClass="DetailViewController_Contact" customModule="Auditions" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Detail_Contact" id="UaC-vO-yGh" customClass="DetailViewController_Contact" customModule="BOBP" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="42" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="p6z-7s-Hck">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -923,7 +926,7 @@
         <!--Talent-->
         <scene sceneID="peW-8y-Wve">
             <objects>
-                <tableViewController storyboardIdentifier="Detail_Animal" id="BoT-n8-2G5" customClass="DetailViewController_Animal" customModule="Auditions" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Detail_Animal" id="BoT-n8-2G5" customClass="DetailViewController_Animal" customModule="BOBP" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="42" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Twb-l5-kmm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

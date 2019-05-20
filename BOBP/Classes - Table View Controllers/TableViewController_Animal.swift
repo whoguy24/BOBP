@@ -24,6 +24,9 @@ class TableViewController_Animal: UITableViewController {
     var stringNewPlaceholder = "Name / Nickname"
     var stringButtonCreate = "Add"
     var stringButtonCancel = "Cancel"
+    var stringDeleteTitle = "Delete Talent"
+    var stringDeleteMessage = "Are you sure you want to delete this talent?"
+    var stringButtonDelete = "Delete"
     
     // Define Object Properties
     var animals = [Animal]()
@@ -38,7 +41,6 @@ class TableViewController_Animal: UITableViewController {
         database = Firestore.firestore()
         loadData()
         checkForUpdates()
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -48,8 +50,8 @@ class TableViewController_Animal: UITableViewController {
         }
     }
     
-    func loadData(){
-        database.collection("Animal").getDocuments () {
+    func loadData() {
+        database.collection("animal").getDocuments () {
             QuerySnapshot, error in
             if let error =  error {
                 print("\(error.localizedDescription)")
@@ -63,25 +65,21 @@ class TableViewController_Animal: UITableViewController {
     }
     
     func checkForUpdates() {
-        database.collection("Animal").addSnapshotListener{
+        database.collection("animal").addSnapshotListener{
             QuerySnapshot, error in
             guard let snapshot = QuerySnapshot else {return}
             snapshot.documentChanges.forEach {
                 update in
-                
+                // I know this is redundant and crazy but I don't know a better way yet.
                 if update.type == .added {
-                    self.animals.append(Animal(dictionary: update.document.data())!)
-                    DispatchQueue.main.async {
-                        self.tableView.reloadData()
-                    }
+                    self.loadData()
                 }
-                
                 if update.type == .modified {
+                    self.loadData()
                 }
-                
                 if update.type == .removed {
+                    self.loadData()
                 }
-                
             }
         }
     }
@@ -111,7 +109,7 @@ class TableViewController_Animal: UITableViewController {
     // Edit/Delete
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            animals.remove(at: indexPath.row)
+            self.animals.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
         }
@@ -131,7 +129,7 @@ class TableViewController_Animal: UITableViewController {
                 let newAnimal = Animal(contactID: "1", animalID: "1", name: name)
                 
                 var reference:DocumentReference? = nil
-                reference = self.database.collection("Animal").addDocument(data: newAnimal.dictionary){
+                reference = self.database.collection("animal").addDocument(data: newAnimal.dictionary){
                     error in
                     if let error = error {
                         print("Error adding document: \(error.localizedDescription)")
